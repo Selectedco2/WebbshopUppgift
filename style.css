@@ -1,6 +1,58 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 body
 {
     display: flex;
     flex-direction:column;
     background-color: black;
+}
+
+header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5vh 5vh;
+    justify-content: space-between;
+    border: solid 4px #FF6B00;
+    border-radius: 10px;
+}
+    
+.logo
+{
+    height: 10vh;
+    width: 30vw;
+    justify-content: center;
+    border-right: solid 4px #FF6B00;
+    border-left: solid 4px #FF6B00;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+a
+{
+    font-size: 1rem;
+    padding-left: 35px;
+    text-decoration: none;
+    color: #FF6B00;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Wishlist
+{
+    /* font-size: 1rem + 1vw; */
+    grid-row: 1/2 ;
+    border-bottom: solid 4px #FF6B00;   
+    height: 50%;    
+    margin: 0px;
+    padding-bottom: 23px;
+}
+#Bpart
+{
+    margin: 0px;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
