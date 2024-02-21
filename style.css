@@ -50,9 +50,23 @@ a
     margin: 0px;
     padding-bottom: 23px;
 }
-#Bpart
+#Partners
 {
     margin: 0px;
-    grid-column: 1/2;
+}
+
+#Toprated
+{
+    border-bottom: solid 4px #FF6B00; 
+    margin: 0px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: -4px;
+}
+
+#Cart
+{
+    margin: 0px;
+    grid-column: 3/4;
     grid-row: 2/3;
 }
