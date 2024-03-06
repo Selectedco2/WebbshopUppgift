@@ -93,6 +93,17 @@ article
     height: 100%;
 }
 
+#Searchbar
+
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+        border: solid 4px #FF6B00;
+        border-radius: 10px;
+        font-size: calc(0.5vh + 0.5rem);
+    }
+
 @media screen and (min-width: 641px)and (max-width: 1025px)
 {
     body
