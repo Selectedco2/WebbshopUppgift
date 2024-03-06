@@ -5,6 +5,7 @@ main
     align-items: center;
 }
 
+
 body
 {
     display: flex;
@@ -33,40 +34,61 @@ header
     grid-row: 1/3;
 }
 
+p
+{
+    color: #FF6B00;
+}
+h1
+{
+    justify-content: center;
+    align-items: center;
+}
+
 a
 {
-    font-size: 1rem;
-    padding-left: 35px;
+    font-size: calc(1.2vw + 1.2vh);
     text-decoration: none;
     color: #FF6B00;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #Wishlist
 {
-    /* font-size: 1rem + 1vw; */
-    grid-row: 1/2 ;
-    border-bottom: solid 4px #FF6B00;   
-    height: 50%;    
+    display: grid;
     margin: 0px;
-    padding-bottom: 23px;
 }
 #Partners
 {
+    display: grid;
     margin: 0px;
 }
 
 #Toprated
 {
-    border-bottom: solid 4px #FF6B00; 
+    display: grid;
+    align-items: center;
     margin: 0px;
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-bottom: -4px;
+    border-top: solid 4px #FF6B00;
+    
 }
 
 #Cart
 {
+    display: grid;
+    align-items: center;
     margin: 0px;
-    grid-column: 3/4;
-    grid-row: 2/3;
+    border-top: solid 4px #FF6B00;
+}
+
+article
+{
+    text-align: center;
+    margin-top: 1rem;
+    border: solid 4px #FF6B00;
+    border-radius: 10px;
+}
+
+.Spel
+{
+    width: 100%;
+    height: 100%;
 }
