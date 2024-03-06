@@ -1,10 +1,3 @@
-main
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 body
 {
@@ -95,21 +88,45 @@ article
 
 #Searchbar
 
-    {
-        display: flex;
-        justify-content: center;
-        margin-top: 2vh;
-        border: solid 4px #FF6B00;
-        border-radius: 10px;
-        font-size: calc(0.5vh + 0.5rem);
-    }
+{
+    display: flex;
+    flex-direction: row;
+    max-height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    border: solid 4px #FF6B00;
+    border-radius: 10px;
+    font-size: calc(0.4vh + 0.4rem);
+}
+
+footer
+
+{
+    text-align: center;
+    border: solid 4px #FF6B00;
+    border-radius: 10px;
+    font-size: calc(1.2vw + 1.2vh);
+    margin-top: 2vh;
+}
 
 @media screen and (min-width: 641px)and (max-width: 1025px)
+
 {
     body
     {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    main
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column: 1/3;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
     }
 
     header
@@ -118,10 +135,6 @@ article
         grid-column: 1/3;
     }
 
-    #Wishlist
-    {
-        
-    }
     .logo
     {
         height: auto;
@@ -131,9 +144,7 @@ article
 
     article
     {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
+        display: grid; 
     }
 
     #Search
@@ -151,6 +162,7 @@ article
     
     .Spel
     {
+        align-items: center;
         border: solid 4px #FF6B00;
         border-radius: 10px;
     }
@@ -160,9 +172,143 @@ article
         border: none;
     }
 
+    #diablo
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }    
+    #alan
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #BG3
+    {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #deadspace
+    {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #ragnarok
+    {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #tekken
+    {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    footer
+    {
+        margin-top: 1vh;
+        grid-column: 1/3;
+    }
 }
 
 @media screen and (min-width: 1026px)
-{
 
+{
+    body
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header
+    {
+        grid-template-rows: 1fr 1fr;
+        grid-column: 1/4;
+        max-height: 200px;
+    }
+
+    main
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-column: 1/4;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo
+    {
+        display: flex;
+        justify-self: center;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        height: 100%;
+        width: auto;
+        padding-left: 27%;
+        padding-right: 27%;
+    }
+
+    #Search
+    {
+        display: grid;
+        grid-column: 1/4;
+    }
+
+    #Searchbar
+    {
+        border: solid 4px #FF6B00;
+        border-radius: 10px;
+        grid-column: 1/4;
+        font-size: calc(1vh + 1rem);
+        min-height: 100px;
+    }
+
+    .Spel
+    {
+        align-items: center;
+        border: solid 4px #FF6B00;
+        border-radius: 10px;
+    }
+
+    article
+    {
+        border: none;
+    }
+
+    #diablo
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }    
+    #alan
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #BG3
+    {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #deadspace
+    {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #ragnarok
+    {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #tekken
+    {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    footer
+    {
+        margin-top: 1vh;
+        grid-column: 1/4;
+    }
 }
