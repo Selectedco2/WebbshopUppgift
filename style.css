@@ -92,3 +92,66 @@ article
     width: 100%;
     height: 100%;
 }
+
+@media screen and (min-width: 641px)and (max-width: 1025px)
+{
+    body
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header
+    {
+        grid-template-rows: auto;
+        grid-column: 1/3;
+    }
+
+    #Wishlist
+    {
+        
+    }
+    .logo
+    {
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    article
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    #Search
+    {
+        display: grid;
+        grid-column: 1/3;
+    }
+
+    #Searchbar
+    {
+        border: solid 4px #FF6B00;
+        border-radius: 10px; 
+        grid-column: 1/3;
+    }
+    
+    .Spel
+    {
+        border: solid 4px #FF6B00;
+        border-radius: 10px;
+    }
+
+    article
+    {
+        border: none;
+    }
+
+}
+
+@media screen and (min-width: 1026px)
+{
+
+}
